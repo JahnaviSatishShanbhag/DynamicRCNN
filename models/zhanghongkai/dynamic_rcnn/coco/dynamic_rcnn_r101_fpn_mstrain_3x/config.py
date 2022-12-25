@@ -27,14 +27,14 @@ class Config:
     DATASETS = edict()
     DATASETS.TRAIN = {
         "coco_2017_train": {
-            "img_dir": osp.join(data_dir, "coco/train2017"),
+            "img_dir": osp.join("/kaggle/input/doclaynet", "PNG"),
             "ann_file": osp.join(
-                data_dir, "coco/annotations/instances_train2017.json")}}
+                "/kaggle/input/doclaynet", "COCO/train.json")}}
     DATASETS.TEST = {
         'coco_2017_val': {
-            "img_dir": osp.join(data_dir, "coco/val2017"),
+            "img_dir": osp.join("/kaggle/input/doclaynet", "PNG"),
             "ann_file": osp.join(
-                data_dir, "coco/annotations/instances_val2017.json")}}
+                "/kaggle/input/doclaynet", "COCO/val.json")}}
 
     # input setting
     INPUT = edict()
