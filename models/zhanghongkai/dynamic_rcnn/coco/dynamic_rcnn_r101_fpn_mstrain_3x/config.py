@@ -100,7 +100,7 @@ class Config:
     MODEL.MASK_ON = False
     MODEL.KEYPOINT_ON = False
     MODEL.CLS_AGNOSTIC_BBOX_REG = False
-    MODEL.WEIGHT = osp.join('/kaggle/input/doclaynet', 'R-101.pkl')
+    MODEL.WEIGHT = osp.join('/kaggle/input', 'R-101.pkl')
 
     MODEL.RPN = edict()
     MODEL.RPN.USE_FPN = True
