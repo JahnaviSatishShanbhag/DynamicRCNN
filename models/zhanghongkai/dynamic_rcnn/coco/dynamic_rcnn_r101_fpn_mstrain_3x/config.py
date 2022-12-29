@@ -61,10 +61,10 @@ class Config:
     # training config
     # TODO: multi machine
     SOLVER = edict()
-    SOLVER.BASE_LR = 0.02
+    SOLVER.BASE_LR = 0.001
     SOLVER.BIAS_LR_FACTOR = 2
     SOLVER.IMS_PER_GPU = 2
-    SOLVER.IMS_PER_BATCH = 16
+    SOLVER.IMS_PER_BATCH = 8
     SOLVER.GAMMA = 0.1
     SOLVER.MOMENTUM = 0.9
     SOLVER.WEIGHT_DECAY = 0.0001
